@@ -1,0 +1,15 @@
+{
+  "name": "mednova-ai-cloudflare",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create mednova-ai-db",
+    "db:migrate:local": "wrangler d1 execute mednova-ai-db --local --file=./schema.sql",
+    "db:migrate:remote": "wrangler d1 execute mednova-ai-db --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.40.0"
+  }
+}

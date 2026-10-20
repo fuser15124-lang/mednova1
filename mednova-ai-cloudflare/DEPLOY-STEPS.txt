@@ -1,0 +1,9 @@
+1. Create a Cloudflare D1 database named mednova-ai-db.
+2. Put the D1 database_id into wrangler.jsonc (replace REPLACE_WITH_YOUR_D1_DATABASE_ID).
+3. Run: npm install
+4. Run: npx wrangler login
+5. Run: npm run db:migrate:remote
+6. Run: npx wrangler secret put GROQ_API_KEY
+7. Run: npx wrangler secret put JWT_SECRET
+8. Run: npm run deploy
+Read README.md for details and limitations.
